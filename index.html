@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    
+    <h1 class="mytitle">My calculator</h1>
+
+    <div class="calculator-container">
+        <div class="top">
+
+            <div class="infos">
+                <div class="logo-model">
+                    <p class="logo">TekDesign</p>
+                    <p class="model">Js 088</p>
+                </div><!--logo-model-->
+
+                <div class="digits">
+
+                    <p>12 DIGITS</p>
+                    <div class="blocks">
+                        <div class="b1"></div>
+                        <div class="b2"></div>
+                        <div class="b3"></div>
+                        <div class="b4"></div>
+                    </div><!--blocks-->
+
+                </div><!--digits-->
+
+            </div><!--infos-->
+
+            <div class="display">
+                <p id="result"></p>
+            </div><!--display-->
+
+        </div><!--top-->
+
+        <!------------------------------------------------------------------------------------------------->
+
+        <div class="bottom">
+            <div class="numbers">
+                <div class="first-line">
+                    <button  id="numSeven" onclick="insert('7')">7</button>
+                    <button  id="numEight" onclick="insert('8')">8</button>
+                    <button  id="num nine" onclick="insert('9')">9</button>
+                    <button  id="operatorSum" onclick="insert('+')">+</button>
+                    <button onclick="back()"> < </button>
+                </div>
+
+                <div class="second-line">
+                    <button  id="numFour" onclick="insert('4')">4</button>
+                    <button  id="numFive" onclick="insert('5')">5</button>
+                    <button  id="numSix" onclick="insert('6')">6</button>
+                    <button  id="operatorSub" onclick="insert('-')">-</button>
+                    <button onclick="clean()">C</button> 
+                </div>
+
+                <div class="third-line">
+                    <button  id="numOne" onclick="insert('1')">1</button>
+                    <button  id="numTwo" onclick="insert('2')">2</button>
+                    <button  id="numThree" onclick="insert('3')">3</button>
+                    <button  id="operatorsMult" onclick="insert('*')">*</button>
+                    <button  class="equal" id="operatorEqual" onclick="calc()">=</button>
+                </div>
+                
+                <div class="fourth-line">
+                    <button id="numZero" onclick="insert('0')">0</button>
+                    <button id="numDouble" onclick="insert('00')">00</button>
+                    <button id="dot" onclick="insert('.')">.</button>
+                    <button id="operatorDiv" onclick="insert('/')">/</button>
+                </div>
+
+                <div class="clearBtn">
+                    
+                                       
+                </div>
+            </div><!--numbers-->
+
+            <div class="operators">
+
+            </div><!--operators-->
+        </div><!--bottom-->
+    </div><!--calculator-->    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
